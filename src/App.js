@@ -1,25 +1,36 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Menu from './components/menu/Menu'
+import Content from './components/content/Content'
+import { Route, HashRouter } from "react-router-dom";
+import jsonFolders from './folders.json';
+
+const Folders = jsonFolders;
 
 class App extends Component {
   render() {
+
+    const pathFolder = Folders.map((folder) => 
+      <Route key={folder.name} path={'/' + folder.name} render={() => <Content folder={folder} />} />
+    )
+
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <div className="App-header">
+          <h1>NicolasR.</h1>
+        </div>
+        <HashRouter>
+          <div>
+            <div className="App-menu">
+              <Menu folders={Folders}/>
+            </div>
+            <div className="App-content">
+              <div className="content">
+                  {pathFolder}
+              </div>
+            </div> 
+          </div>
+        </HashRouter>
       </div>
     );
   }

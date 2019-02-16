@@ -1,0 +1,32 @@
+.Picture-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 400ms ease-in-out 0s;
+    cursor: pointer;
+}
+
+.Picture-container img {
+    object-fit: contain;
+    width: calc(100vw - 2rem);
+    max-height: calc(100vh - 4rem - 100px);
+    opacity: 1;
+    transition: opacity 400ms ease-in-out 0s;
+}
+
+.Carousel-controls {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    padding: 1rem;
+    color: #525252;
+}
+
+.Carousel-controls i {
+    cursor: pointer;
+}
+
+.Controls-position {
+    width: 50px;
+}

@@ -1,0 +1,50 @@
+[
+    {
+        "name": "bergen1",
+        "label": "Bergen",
+        "picturePrefix": "bergen",
+        "size": 15
+    },  
+    {
+        "name": "marseille1",
+        "label": "Marseille",
+        "picturePrefix": "marseille",
+        "size": 9
+    },
+    {
+        "name": "montsaintmichel1",
+        "label": "Mont-Saint-Michel",
+        "picturePrefix": "montsaintmichel",
+        "size": 7
+    },
+    {
+        "name": "ancelle1",
+        "label": "Ancelle",
+        "picturePrefix": "ancelle",
+        "size": 8
+    },
+    {
+        "name": "lisbonne1",
+        "label": "Lisbonne",
+        "picturePrefix": "lisbonne",
+        "size": 7
+    },
+    {
+        "name": "croatie1",
+        "label": "Croatie",
+        "picturePrefix": "croatie",
+        "size": 30
+    },
+    {
+        "name": "paris1",
+        "label": "Paris",
+        "picturePrefix": "paris",
+        "size": 11
+    },
+    {
+        "name": "idf1",
+        "label": "Ile-de-France",
+        "picturePrefix": "idf",
+        "size": 41
+    }
+  ]
