@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Menu from './components/menu/Menu'
 import Content from './components/content/Content'
-import { Route, HashRouter } from "react-router-dom";
+import { Redirect, Route, HashRouter } from "react-router-dom";
 import jsonFolders from './folders.json';
 
 const Folders = jsonFolders;
@@ -26,6 +26,7 @@ class App extends Component {
             </div>
             <div className="App-content">
               <div className="content">
+                  <Redirect from="/" to={Folders[0].name}/>
                   {pathFolder}
               </div>
             </div> 
